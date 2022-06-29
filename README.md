@@ -22,7 +22,8 @@ O site leva o usuário para as minhas redes sociais e meu portifólio no github,
 Em construção...
 
 ![image](https://user-images.githubusercontent.com/56547690/176330396-8798df97-7d4f-4882-9b3a-b2331b7f509e.png)
-![image](https://user-images.githubusercontent.com/56547690/176330519-51b03ce4-6e91-4954-a2a5-d6e99c5f7335.png)
+![image](https://user-images.githubusercontent.com/56547690/176330614-df5bd06b-01e2-4967-9e75-af276346b290.png)
+
 
 
 
