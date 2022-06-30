@@ -5,8 +5,8 @@ import GlobalStateContext from "./GlobalStateContext";
 const GlobalState = (props) => {
 
     const [theme, setTheme] = useState()
-    const [menu, setMenu] = useState(true)
     const [colorBackground, setColorBackground] = useState('#ffffff')
+    const [colorTextMenu, setColorTextMenu] = useState('#ffffff')
     const [colorText, setColorText] = useState('#2e2e2e')   
 
     useEffect(()=>{
@@ -26,11 +26,13 @@ const GlobalState = (props) => {
 
     const themeDark = () =>{
         setColorBackground('#282a36')
+        setColorTextMenu('#282a36')
         setColorText('#D3D3D3')
     }
 
     const themeLight = () =>{
         setColorBackground('#ffffff')
+        setColorTextMenu('#ffffff')
         setColorText('#2e2e2e')
     }
 
@@ -59,7 +61,7 @@ const GlobalState = (props) => {
 
     }
 
-    const data = {lightTheme, colorBackground, colorText, menuShow}
+    const data = {lightTheme, colorBackground, colorText, menuShow, colorTextMenu}
 
     return (
         <GlobalStateContext.Provider value={data}>
