@@ -1,31 +1,43 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-    background-color: aqua;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem; 
+    background-color: transparent;
 
     p{
         color: #bd93f9;
         cursor: pointer;
     }
 
-        
     @media screen and (max-width: 480px){
-        height: 8vh;
-        background-color: ${props => props.colorBackground};
+        height: 8vh; 
+    }  
+
+    @media screen and (min-width: 481px) and (max-width: 768px){
+        font-size: 1.2rem;
+        padding: 0 3.5rem 1.5rem 3.5rem;
     }
-    
+
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+        padding: 0 4rem 1.5rem 4rem;
+        font-size: 2rem;
+    }
+
+    @media screen and (min-width: 1025px){
+        padding: 0 5rem 1.5rem 5rem;
+        font-size: 1.8rem;
+    }
+
 `
 
 export const ButtonsFooter = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    //background-color: bisque;
     position: relative;
     
     img{
@@ -50,7 +62,33 @@ export const ButtonsFooter = styled.div`
     @media screen and (max-width: 480px){
         width: 25vw;
     }
-    `
+
+    @media screen and (min-width: 481px){
+        label img{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px){
+        
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+        
+    }
+
+    @media screen and (min-width: 1025px){
+        padding: 0 0rem 2.5rem 0rem;
+        font-size: 3rem;
+        height: 3vh;
+
+        img{
+            height: 5vh;
+        }
+    }
+
+    
+`
 
 
 export const MenuShow = styled.div`

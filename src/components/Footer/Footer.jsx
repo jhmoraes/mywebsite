@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react"
+import React, { useContext } from "react"
 import { FooterContainer, MenuShow, MenuShowContainer, ButtonsFooter } from './styled-footer'
 import themeIcon from '../../img/dianoite.png'
 import menuIcon from '../../img/barra-de-menu.png'
@@ -10,10 +10,10 @@ import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
 
-    const { lightTheme, colorBackground, menuShow, colorTextMenu} = useContext(GlobalStateContext)
+    const { lightTheme, colorBackground, colorTextMenu} = useContext(GlobalStateContext)
     const navigate = useNavigate()
 
-    console.log(colorTextMenu)
+    console.log(colorBackground)
 
 
     return (
