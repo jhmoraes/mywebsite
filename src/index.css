@@ -4,12 +4,13 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
   font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 2rem;
+  
 
   
 }
@@ -20,11 +21,4 @@ code {
   font-family: 'Karla', sans-serif;
 
 
-}
-
-
-@media screen and (max-width: 480px) {
-  body {
-    padding: 0;
-  }
 }

@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import GlobalStateContext from "./GlobalStateContext";
+import fundoNuvem from '../img/fundo-nuvem.jpg'
 
 
 const GlobalState = (props) => {
 
     const [theme, setTheme] = useState()
-    const [colorBackground, setColorBackground] = useState('#ffffff')
+    const [colorBackground, setColorBackground] = useState(`${fundoNuvem}`)
     const [colorTextMenu, setColorTextMenu] = useState('#ffffff')
+    const [colorTextHeader, setColorTextHeader] = useState('#2e2e2e')
     const [colorText, setColorText] = useState('#2e2e2e')   
 
     useEffect(()=>{
@@ -25,14 +27,16 @@ const GlobalState = (props) => {
     }
 
     const themeDark = () =>{
-        setColorBackground('#282a36')
+        setColorBackground(`#282a36`)
         setColorTextMenu('#282a36')
+        setColorTextHeader('#D3D3D3')
         setColorText('#D3D3D3')
     }
 
     const themeLight = () =>{
-        setColorBackground('#ffffff')
+        setColorBackground(`${fundoNuvem}`)
         setColorTextMenu('#ffffff')
+        setColorTextHeader('#2e2e2e')
         setColorText('#2e2e2e')
     }
 
@@ -61,7 +65,7 @@ const GlobalState = (props) => {
 
     }
 
-    const data = {lightTheme, colorBackground, colorText, menuShow, colorTextMenu}
+    const data = {lightTheme, colorBackground, colorText, menuShow, colorTextMenu, colorTextHeader}
 
     return (
         <GlobalStateContext.Provider value={data}>
