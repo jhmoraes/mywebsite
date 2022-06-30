@@ -11,9 +11,8 @@ import watsappIcon from '../../img/watsappIcon.png'
 
 const Home = () => {
 
-    const {colorBackground, colorText} = useContext(GlobalStateContext)  
-    //console.log('colorBackground', colorBackground)
-
+    const {colorBackground, colorText} = useContext(GlobalStateContext)
+    
     return (
         <div>
             {colorBackground ? 
