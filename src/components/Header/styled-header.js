@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderContainer = styled.div`
     height: 10vh;
     display: flex;
-    justify-content: flex-end;
+    //justify-content: flex-end;
     align-items: center;
     padding: 2rem 2rem 0 2rem;
     color: ${props => props.colorTextHeader};   
@@ -35,17 +35,26 @@ export const HeaderContainer = styled.div`
         padding: 2rem 3rem 0 2rem;
 
         li{
-            font-size: 1.5rem; 
+            font-size: 1.2rem; 
             margin-left: 4rem
         }  
     }
 
     @media screen and (min-width: 1025px){
-        padding: 2rem 5rem 0 2rem;
+        padding: 2rem 7rem 0 7rem;
 
         li{
             font-size: 1.5rem; 
             margin-left: 7rem
         } 
+    }
+
+    @media screen and (min-width: 2880px){
+        
+        li{
+            font-size: 2.5rem; 
+            margin-left: 15rem
+        }
+
     }
 `

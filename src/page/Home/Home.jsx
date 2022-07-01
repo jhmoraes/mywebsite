@@ -19,7 +19,7 @@ const Home = () => {
             <HomeContainer colorBackground={colorBackground}>
                 <Header />
                 <HomeBodyContainer>
-                    <img src={fotoPerfil} />
+                    <img id='photoPerfil' src={fotoPerfil} />
                     <ProfileText colorText={colorText}>
                         <h1>Hi, I'm Juliana</h1>
                         <h2>Full Stack Developer</h2>
