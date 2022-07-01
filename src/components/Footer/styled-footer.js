@@ -11,15 +11,23 @@ export const FooterContainer = styled.footer`
     p{
         color: #bd93f9;
         cursor: pointer;
+        font-size: 1rem;
     }
 
     @media screen and (max-width: 480px){
         height: 8vh; 
+
+        p{
+            font-size: 1rem;
+        }
     }  
 
     @media screen and (min-width: 481px) and (max-width: 768px){
         font-size: 1.2rem;
         padding: 0 3.5rem 1.5rem 3.5rem;
+        p{
+            font-size: 1.1rem;
+        }
     }
 
     @media screen and (min-width: 769px) and (max-width: 1024px){
@@ -28,8 +36,10 @@ export const FooterContainer = styled.footer`
     }
 
     @media screen and (min-width: 1025px){
-        padding: 0 5rem 1.5rem 5rem;
+        padding: 0 7rem 1.5rem 7rem;
         font-size: 1.8rem;
+        justify-content: flex-end;
+        p{display: none}
     }
 
 `
@@ -81,7 +91,6 @@ export const ButtonsFooter = styled.div`
         padding: 0 0rem 2.5rem 0rem;
         font-size: 3rem;
         height: 3vh;
-
         img{
             height: 5vh;
         }
