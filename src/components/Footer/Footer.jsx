@@ -3,7 +3,7 @@ import { FooterContainer, MenuShow, MenuShowContainer, ButtonsFooter } from './s
 import themeIcon from '../../img/dianoite.png'
 import menuIcon from '../../img/barra-de-menu.png'
 import GlobalStateContext from '../../globalState/GlobalStateContext'
-import { goToHome } from '../../router/Coordinator'
+import { goToCareer, goToHome, goToProject } from '../../router/Coordinator'
 import { useNavigate } from "react-router-dom";
 
 
@@ -30,8 +30,8 @@ const Footer = () => {
                     </label>
 
                     <MenuShow className="menuShow" colorTextMenu={colorTextMenu}>
-                        <a><p>Sobre mim</p></a>
-                        <a><p>Carreira</p></a>
+                        <p><a onClick={()=>goToProject(navigate)}>Projetos</a></p>
+                        <p><a onClick={()=>goToCareer(navigate)}>Carreira</a></p>
                     </MenuShow>
 
                 </div>

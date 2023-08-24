@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-//telas no máximo 320, 480, 720, 768, 900, 1024, 1200....
-
 export const HomeContainer = styled.div`
     background-color: ${props => props.colorBackground};
     background-image: url(${(props => props.colorBackground)});
@@ -10,10 +8,10 @@ export const HomeContainer = styled.div`
     flex-direction: column; 
     justify-content: space-between;   
     height: 100vh; 
+    padding: 0 5vw;
 `
 
 export const HomeBodyContainer = styled.div`
-    //background-color: papayawhip;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -23,7 +21,23 @@ export const HomeBodyContainer = styled.div`
 
     #photoPerfil{
         height: 25vh;
+        transform: translateY(0px);
+        animation: float 5s ease-in-out infinite;
+        box-shadow: 4px 25px 50px -5px #a067e4;
+        border-radius: 50%;
     }   
+
+    @keyframes float {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-40px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
     
     @media screen and (min-width: 1025px){
         flex-direction: row-reverse;
@@ -32,7 +46,6 @@ export const HomeBodyContainer = styled.div`
         
         #photoPerfil{
             height: 35vh;
-            //padding: 0 5rem 0 0;
         }   
     }
 `
@@ -44,16 +57,17 @@ export const ProfileText = styled.div`
     h1{
         font-size: 2rem;
         color: ${props => props.colorText};
-        margin-bottom: 0.2rem;
-    }
-
-    h2{
-        font-size: 1.2rem;
-        color: #808080;
         margin-bottom: 1.5rem;
     }
 
+    label{
+        color: ${props => props.colorText};
+        font-size: 1.5rem;
+        width: 5vw;
+    }
+
     p{
+        margin-top: 1.5rem ;
         font-size: 0.8rem;
         color: #808080;
     }
@@ -61,32 +75,31 @@ export const ProfileText = styled.div`
     @media screen and (min-width: 481px) and (max-width: 768px){
         width: 42vh;
         h1{font-size: 3rem}
-        h2{font-size: 1.7rem}
+        label{font-size: 1.7rem}
         p{font-size: 1.2rem}
     }
     
     @media screen and (min-width: 769px) and (max-width: 1024px){
         width: 42vh;
         h1{font-size: 3rem}
-        h2{font-size: 1.7rem}
+        label{font-size: 1.7rem}
         p{font-size: 1.2rem}
     }
 
     @media screen and (min-width: 1025px){
-        width: 55vh;
+        width: 40%;
         padding-bottom: 1.5rem;
         h1{font-size: 3.8rem}
-        h2{font-size: 2.2rem}
+        label{font-size: 1.7rem}
         p{font-size: 1.5rem}
         
     }
 
     @media screen and (min-width: 2880px){
-        
-        width: 55vh;
+        width: 40%;
         padding-bottom: 1.5rem;
         h1{font-size: 6rem}
-        h2{font-size: 3.5rem}
+        label{font-size: 3.5rem}
         p{font-size: 2.5rem}
 
     }
@@ -119,12 +132,12 @@ export const NetworkIcons = styled.div`
         }
     }
 
-    @media screen and (min-width: 769px) and (max-width: 1024px){
+   /*  @media screen and (min-width: 769px) and (max-width: 1024px){
         
         img{
             height: 8vh;
         }
-    }
+    } */
 
     @media screen and (min-width: 1025px){
         display: flex;
