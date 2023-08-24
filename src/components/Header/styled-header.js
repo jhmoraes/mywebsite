@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderContainer = styled.div`
     height: 10vh;
     display: flex;
-    //justify-content: flex-end;
+    justify-content: flex-end;
     align-items: center;
     padding: 2rem 2rem 0 2rem;
     color: ${props => props.colorTextHeader};   
@@ -29,12 +29,13 @@ export const HeaderContainer = styled.div`
         }
     }
 
-
-    @media screen and (max-width: 480px){
-        display: none;
+    @media screen and (max-width: 480px){  
+        min-width: 90%;
+            
     }
     
     @media screen and (min-width: 481px) and (max-width: 768px){
+
         li{
             font-size: 1.3rem; 
             margin-left: 4rem
