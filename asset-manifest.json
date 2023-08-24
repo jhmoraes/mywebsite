@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/new-personal-website/static/css/main.5a832a54.css",
+    "main.js": "/new-personal-website/static/js/main.f6dcbf65.js",
+    "static/media/fotoPerfil.png": "/new-personal-website/static/media/fotoPerfil.ec92e294578c31a15434.png",
+    "static/media/fundo-nuvem.jpg": "/new-personal-website/static/media/fundo-nuvem.21a3d53f82772ef08fca.jpg",
+    "static/media/watsappIcon.png": "/new-personal-website/static/media/watsappIcon.22b5749a7c869b854f0e.png",
+    "static/media/gitHubIcon.png": "/new-personal-website/static/media/gitHubIcon.b17adccdd51c42da77fe.png",
+    "static/media/linkedinIcon.png": "/new-personal-website/static/media/linkedinIcon.720dcf0529b8ae22a0ef.png",
+    "static/media/emBreve.png": "/new-personal-website/static/media/emBreve.afafd44ed6f33975347c.png",
+    "index.html": "/new-personal-website/index.html",
+    "main.5a832a54.css.map": "/new-personal-website/static/css/main.5a832a54.css.map",
+    "main.f6dcbf65.js.map": "/new-personal-website/static/js/main.f6dcbf65.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a832a54.css",
+    "static/js/main.f6dcbf65.js"
+  ]
+}
