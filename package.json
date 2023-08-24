@@ -1,7 +1,7 @@
 {
   "name": "novo-site-pessoal",
   "version": "0.1.0",
-  "homepage": "https://jhmoraes.github.io/new-personal-website",
+  "homepage": "https://jhmoraes.github.io/mywebsite",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.1.0",
