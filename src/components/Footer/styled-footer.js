@@ -71,20 +71,13 @@ export const ButtonsFooter = styled.div`
     
     @media screen and (max-width: 480px){
         width: 25vw;
+
     }
 
     @media screen and (min-width: 481px){
         label img{
             display: none;
         }
-    }
-
-    @media screen and (min-width: 481px) and (max-width: 768px){
-        
-    }
-
-    @media screen and (min-width: 769px) and (max-width: 1024px){
-        
     }
 
     @media screen and (min-width: 1025px){
@@ -99,7 +92,6 @@ export const ButtonsFooter = styled.div`
     
 `
 
-
 export const MenuShow = styled.div`
     background: -webkit-linear-gradient(#A1C0FD, #E3A0FE);
     right: 1%;
@@ -108,7 +100,7 @@ export const MenuShow = styled.div`
     padding: 0.5rem 1rem;
     border-radius: 8px; 
     
-    a p{
+    a, p{
         color: ${props => props.colorTextMenu};
         margin-bottom: 1rem;
         margin-top: 0.5rem;

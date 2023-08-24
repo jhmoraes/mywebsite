@@ -10,9 +10,9 @@ const GlobalState = (props) => {
     const [colorTextMenu, setColorTextMenu] = useState('#ffffff')
     const [colorTextHeader, setColorTextHeader] = useState('#2e2e2e')
     const [colorText, setColorText] = useState('#2e2e2e')   
+    const [colorShadowCard, setColorShadowCard] = useState('#ffb6c1')   
 
     useEffect(()=>{
-        setTheme(localStorage.getItem('themeStorage'))
         checkLocalStorage()    
     },[])
 
@@ -31,6 +31,7 @@ const GlobalState = (props) => {
         setColorTextMenu('#282a36')
         setColorTextHeader('#D3D3D3')
         setColorText('#D3D3D3')
+        setColorShadowCard('#282a36')
     }
 
     const themeLight = () =>{
@@ -38,6 +39,7 @@ const GlobalState = (props) => {
         setColorTextMenu('#ffffff')
         setColorTextHeader('#2e2e2e')
         setColorText('#2e2e2e')
+        setColorShadowCard('#ffe4ec')
     }
 
 
@@ -55,17 +57,7 @@ const GlobalState = (props) => {
         }
     }
 
-
-    const menuShow = () => {
-        // if(menu){
-        //     setMenu(false)
-        // } else{
-        //     setMenu(true)
-        // }
-
-    }
-
-    const data = {lightTheme, colorBackground, colorText, menuShow, colorTextMenu, colorTextHeader}
+    const data = {lightTheme, colorBackground, colorText, colorTextMenu, colorTextHeader, colorShadowCard}
 
     return (
         <GlobalStateContext.Provider value={data}>

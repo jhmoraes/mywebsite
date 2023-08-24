@@ -14,9 +14,19 @@ export const HeaderContainer = styled.div`
         justify-content: flex-end;
         width: 100%;
     }
-
+    
     li{
         margin-left: 0.7rem;
+        cursor: pointer;
+        background-image: linear-gradient(90deg, #a067e4, #a067e4, #66d3fa);
+        background-repeat: no-repeat;
+        background-size: 0% 1px;
+        background-position: left bottom;
+        transition:  background-size 500ms;
+        
+        :hover{
+           background-size: 100% 1px;
+        }
     }
 
 
