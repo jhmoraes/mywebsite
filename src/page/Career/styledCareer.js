@@ -7,8 +7,9 @@ export const HomeContainer = styled.main`
     display: flex;   
     flex-direction: column; 
     justify-content: space-between;  
-    min-height: 100vh; 
+    height: 100vh; 
     padding: 0 5vw;
+
 `
 
 export const BarCareerContainer = styled.div`
@@ -28,7 +29,9 @@ export const BarCareerContainer = styled.div`
         left: -260px;
     } 
 
-    @media screen and (max-width: 480px){     
+    @media screen and (max-width: 480px){  
+        margin-left: 0;
+        margin: 0 auto;
         img{
             display: none;
         }
@@ -36,25 +39,16 @@ export const BarCareerContainer = styled.div`
     
     @media screen and (min-width: 481px) and (max-width: 768px){
         max-width: 80%;       
-        margin-left: 0%;
-        margin: 0 auto;
         img{
-            display: none;
-        }
-    }
-
-    @media screen {
-       
-        img{
-            height: 0.2vh;
-            width: 45%;
+            left: -240px;
+            width: 90%;
         } 
     }
 
     @media screen and (min-width: 1025px) and (max-width: 1920px){
-      
+
         img{
-            left: -330px;
+            left: -260px;
         } 
     }
 
@@ -85,8 +79,9 @@ export const Formation = styled.ul`
 
     
     @media screen and (max-width: 380px){
+        margin: 0 auto;
        li{
-        font-size: 0.7rem;
+        font-size: 1rem;
        }
     }
     
@@ -94,8 +89,6 @@ export const Formation = styled.ul`
         
         li{
         font-size: 1rem;
-        display: flex;
-        flex-direction: column;
        }
        
     }

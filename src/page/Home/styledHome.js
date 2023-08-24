@@ -17,7 +17,6 @@ export const HomeBodyContainer = styled.div`
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    padding: 4rem 0;
 
     #photoPerfil{
         height: 25vh;
@@ -72,11 +71,18 @@ export const ProfileText = styled.div`
         color: #808080;
     }
 
+    @media screen and (max-width: 480px){     
+        h1{font-size: 1.4rem}
+        label{font-size: 1rem}
+        p{font-size: 0.8rem}
+    }
+
     @media screen and (min-width: 481px) and (max-width: 768px){
         width: 42vh;
         h1{font-size: 3rem}
         label{font-size: 1.7rem}
         p{font-size: 1.2rem}
+        
     }
     
     @media screen and (min-width: 769px) and (max-width: 1024px){
@@ -112,7 +118,8 @@ export const NetworkIcons = styled.div`
     @media screen and (max-width: 380px){
         img{
             padding: 0 0.5rem;
-            height: 8vh;
+            height: 7vh;
+           
         }
     }
     
@@ -120,7 +127,8 @@ export const NetworkIcons = styled.div`
         
         img{
             padding: 0 0.5rem;
-            height: 9vh;
+            height: 8vh;
+            
         }
     }
 
@@ -132,12 +140,13 @@ export const NetworkIcons = styled.div`
         }
     }
 
-   /*  @media screen and (min-width: 769px) and (max-width: 1024px){
+    @media screen and (min-width: 769px) and (max-width: 1024px){
         
         img{
             height: 8vh;
+            margin-top: 10%;
         }
-    } */
+    } 
 
     @media screen and (min-width: 1025px){
         display: flex;
