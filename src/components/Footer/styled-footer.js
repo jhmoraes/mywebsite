@@ -71,6 +71,9 @@ export const ButtonsFooter = styled.div`
     
     @media screen and (max-width: 480px){
         width: 25vw;
+        img{
+            height: 4.2vh;
+        }
 
     }
 
@@ -108,8 +111,12 @@ export const MenuShow = styled.div`
 
     @media screen and (max-width: 380px){
         font-size: 1rem;
-        width: 25vw;
-        height: 10vh;
+        width: 30vw;
+        height: 13vh;
+
+        a, p{
+            font-size: 1.3rem;
+        }
     }
 
     @media screen and (min-width: 480px){

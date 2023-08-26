@@ -29,11 +29,16 @@ export const HeaderContainer = styled.div`
         }
     }
 
-    @media screen and (max-width: 480px){  
-        min-width: 90%;
-            
+    @media screen and (max-width: 380px){
+        display: none;
     }
     
+    @media screen and (min-width: 381px) and (max-width: 480px){
+        
+        display: none;
+    }
+
+   
     @media screen and (min-width: 481px) and (max-width: 768px){
 
         li{
