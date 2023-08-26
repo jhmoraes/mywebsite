@@ -36,4 +36,10 @@ export const CardContainer = styled.div`
     @media screen and (min-width: 1921px){
         width: 80%;
     }
+
+    @media screen and (max-width: 480px){
+        max-width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
 `

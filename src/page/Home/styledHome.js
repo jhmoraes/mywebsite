@@ -9,6 +9,10 @@ export const HomeContainer = styled.div`
     justify-content: space-between;   
     height: 100vh; 
     padding: 0 5vw;
+
+    @media screen and (max-width: 480px){
+        padding-top: 7%;
+    }
 `
 
 export const HomeBodyContainer = styled.div`
@@ -37,6 +41,14 @@ export const HomeBodyContainer = styled.div`
             transform: translateY(0px);
         }
     }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+        #photoPerfil{
+            margin-top: 6%;
+        }
+    }
+
+    
     
     @media screen and (min-width: 1025px){
         flex-direction: row-reverse;
@@ -72,24 +84,17 @@ export const ProfileText = styled.div`
     }
 
     @media screen and (max-width: 480px){     
-        h1{font-size: 1.4rem}
-        label{font-size: 1rem}
+        h1{font-size: 2.4rem;}
+        label{font-size: 1.1rem}
         p{font-size: 0.8rem}
-    }
-
-    @media screen and (min-width: 481px) and (max-width: 768px){
-        width: 42vh;
-        h1{font-size: 3rem}
-        label{font-size: 1.7rem}
-        p{font-size: 1.2rem}
         
     }
     
-    @media screen and (min-width: 769px) and (max-width: 1024px){
-        width: 42vh;
-        h1{font-size: 3rem}
+    @media screen and (min-width: 481px) and (max-width: 1024px){
+        min-width: 80%;
+        h1{font-size: 2.5rem}
         label{font-size: 1.7rem}
-        p{font-size: 1.2rem}
+        p{font-size: 1.2rem}    
     }
 
     @media screen and (min-width: 1025px){
@@ -141,10 +146,10 @@ export const NetworkIcons = styled.div`
     }
 
     @media screen and (min-width: 769px) and (max-width: 1024px){
-        
         img{
             height: 8vh;
             margin-top: 10%;
+            padding: 0 1rem;
         }
     } 
 

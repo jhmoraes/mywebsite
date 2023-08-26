@@ -10,10 +10,10 @@ export const HomeContainer = styled.div`
     height: 100vh; 
     padding: 0 5vw;
 
+    @media screen and (max-width: 480px){
+        padding-top: 7%;
+    }
     
-    @media screen and (max-width: 768px){
-        align-items: center;
-    } 
 `
 
 export const ProjectsBodyContainer = styled.div`
@@ -26,10 +26,14 @@ export const ProjectsBodyContainer = styled.div`
 
     @media screen and (max-width: 480px){
         max-height: 80vh;
+        min-width: 100%;
         overflow: scroll;
-        width:80%;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4,1fr);
+        align-items: center;
+        justify-items: center;
+        
+        
     }
     
     @media screen and (min-width: 481px) and (max-width: 768px){

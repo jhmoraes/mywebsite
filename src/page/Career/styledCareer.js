@@ -32,6 +32,7 @@ export const BarCareerContainer = styled.div`
     @media screen and (max-width: 480px){  
         margin-left: 0;
         margin: 0 auto;
+        padding-top: 50%;
         img{
             display: none;
         }
@@ -81,14 +82,14 @@ export const Formation = styled.ul`
     @media screen and (max-width: 380px){
         margin: 0 auto;
        li{
-        font-size: 1rem;
+        font-size: 1.2rem;
        }
     }
     
     @media screen and (min-width: 381px) and (max-width: 480px){
         
         li{
-        font-size: 1rem;
+        font-size: 1.3rem;
        }
        
     }
