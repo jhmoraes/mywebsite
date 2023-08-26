@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mywebsite/static/css/main.5a832a54.css",
-    "main.js": "/mywebsite/static/js/main.5c543a1d.js",
+    "main.js": "/mywebsite/static/js/main.c8984092.js",
     "static/media/fotoPerfil.png": "/mywebsite/static/media/fotoPerfil.ec92e294578c31a15434.png",
     "static/media/fundo-nuvem.jpg": "/mywebsite/static/media/fundo-nuvem.21a3d53f82772ef08fca.jpg",
     "static/media/watsappIcon.png": "/mywebsite/static/media/watsappIcon.22b5749a7c869b854f0e.png",
@@ -10,10 +10,10 @@
     "static/media/emBreve.png": "/mywebsite/static/media/emBreve.afafd44ed6f33975347c.png",
     "index.html": "/mywebsite/index.html",
     "main.5a832a54.css.map": "/mywebsite/static/css/main.5a832a54.css.map",
-    "main.5c543a1d.js.map": "/mywebsite/static/js/main.5c543a1d.js.map"
+    "main.c8984092.js.map": "/mywebsite/static/js/main.c8984092.js.map"
   },
   "entrypoints": [
     "static/css/main.5a832a54.css",
-    "static/js/main.5c543a1d.js"
+    "static/js/main.c8984092.js"
   ]
 }
