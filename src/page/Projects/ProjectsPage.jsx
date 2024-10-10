@@ -1,9 +1,11 @@
 import React, { useContext } from "react"
 import GlobalStateContext from '../../globalState/GlobalStateContext'
-import { HomeContainer, ProjectsBodyContainer } from './styledProject'
+import { HomeContainer, ProjectsBodyContainer, ProjetcContainer } from './styledProject'
 import Header from '../../components/Header/header'
 import Footer from '../../components/Footer/Footer'
 import CardProjact from "../../components/Card/CardProject"
+import imgDW from '../../img/img-projetos/DW.jpg'
+import imgEmbreve from '../../img/img-projetos/emBreve.png'
 
 
 const ProjectsPage = () => {
@@ -13,16 +15,16 @@ const ProjectsPage = () => {
     return (
         <div>
             {colorBackground ?
-                <HomeContainer colorBackground={colorBackground}>
+                <ProjetcContainer colorBackground={colorBackground}>
                     <Header />
                     <ProjectsBodyContainer>
-                        <CardProjact></CardProjact>
-                        <CardProjact></CardProjact>
-                        <CardProjact></CardProjact>
-                        <CardProjact></CardProjact>
+                        <CardProjact imgproj={imgDW} urlProject={"https://jhmoraes.github.io/direcao-web/"}></CardProjact>
+                        <CardProjact imgproj={imgEmbreve}></CardProjact>
+                        <CardProjact imgproj={imgEmbreve}></CardProjact>
+                        <CardProjact imgproj={imgEmbreve}></CardProjact>
                     </ProjectsBodyContainer>
                     <Footer />
-                </HomeContainer> : <p>carregando...</p>}
+                </ProjetcContainer> : <p>carregando...</p>}
         </div>
 
     )

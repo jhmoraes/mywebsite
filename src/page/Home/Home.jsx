@@ -23,7 +23,7 @@ const Home = () => {
                         <img id='photoPerfil' src={fotoPerfil} />
                         <ProfileText colorText={colorText}>
                             <h1>Olá! Sou a <br/>Juliana Moraes</h1>
-                            <label>Desenvolvedora Full Stack <br /> Instrutora de programação <br />Arquiteta de software em desenvolvimento</label>
+                            <label>Desenvolvedora Full Stack <br /> Instrutora de programação <br />Arquiteta de software</label>
                             <p>"Acredite no poder dos estudos!"</p>
                         </ProfileText>
 
