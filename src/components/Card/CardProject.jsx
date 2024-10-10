@@ -1,17 +1,19 @@
 import React from "react"
-import {CardContainer} from './styledCard'
-import imgCard from '../../img/emBreve.png'
+import { CardContainer } from './styledCard'
 import { useContext } from "react"
 import GlobalStateContext from "../../globalState/GlobalStateContext"
 
-export default function CardProjact() {
+export default function CardProjact({ imgproj, urlProject }) {
 
   const { colorShadowCard } = useContext(GlobalStateContext)
 
   return (
     <CardContainer colorShadowCard={colorShadowCard}>
-      {imgCard?<img src={imgCard}/>:<p>carregando</p>}
-      <p>Nome do Projeto</p>
+      <a href={urlProject} target="blanc">
+        {imgproj ? <img src={imgproj} /> : <p>carregando</p>}
+        <p>Nome do Projeto</p>
+      </a>
+
     </CardContainer>
   )
 } 

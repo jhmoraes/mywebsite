@@ -21,7 +21,7 @@ const Footer = () => {
             <p onClick={() => goToHome(navigate)}>@Juliana</p>
 
             <ButtonsFooter>
-                <a onClick={() => lightTheme()}><img src={themeIcon} /></a>
+                <a className='btn-lightTheme' onClick={() => lightTheme()}><img src={themeIcon} /></a>
                 <input type='checkbox' id='active-menu-show' />
 
                 <div className="active-menu-show-container">
