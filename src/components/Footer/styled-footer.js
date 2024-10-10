@@ -7,6 +7,9 @@ export const FooterContainer = styled.footer`
     align-items: center;
     padding: 0 2rem; 
     background-color: transparent;
+  
+    height: 15vh;
+
 
     p{
         color: #bd93f9;
@@ -49,17 +52,18 @@ export const ButtonsFooter = styled.div`
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    
+
+
     img{
         height: 3vh;
         cursor: pointer;
-        :active{opacity: 0.2}
+        :active{opacity: 0.2} 
     }
     
     input{
         display: none;
     }
-    
+
     .menuShow{
         display: none;
         position: absolute;
@@ -74,7 +78,6 @@ export const ButtonsFooter = styled.div`
         img{
             height: 4.2vh;
         }
-
     }
 
     @media screen and (min-width: 481px){
@@ -90,9 +93,7 @@ export const ButtonsFooter = styled.div`
         img{
             height: 5vh;
         }
-    }
-
-    
+    }    
 `
 
 export const MenuShow = styled.div`
