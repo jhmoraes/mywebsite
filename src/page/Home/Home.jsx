@@ -10,6 +10,7 @@ import watsappIcon from '../../img/watsappIcon.png'
 import email from '../../img/email.png'
 
 
+
 const Home = () => {
 
     const { colorBackground, colorText } = useContext(GlobalStateContext)

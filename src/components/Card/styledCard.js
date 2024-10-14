@@ -4,7 +4,7 @@ export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    
     padding: 5% 2%;
     /* box-shadow: 4px 25px 20px -5px  ${props => props.colorShadowCard}; */
     
@@ -24,10 +24,18 @@ export const CardContainer = styled.div`
             transition:  border-image-width 500ms;
     }  */
 
-    p{
-        padding: 1.5rem 0 ;
+    li{
+        padding: 0.2rem 0 ;
         font-size: 1.4rem;
         color: #808080;
+        list-style: none; 
+    }
+    li:nth-child(3){
+        font-size: 1rem;
+    }
+
+    a{
+        text-decoration: none;
     }
 
 
